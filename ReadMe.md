@@ -1,5 +1,8 @@
 ﻿Through the API it decodes the payload AES-128 mechanism.
 It works in the following way:
+
+
+
 ----------------------------------------------->
 
 
@@ -27,6 +30,8 @@ using Aes128Decrypt;
 
         return json;
         }
+        
+        
 <-----------------------------------------------
 
 json file is payload data after decoding.
