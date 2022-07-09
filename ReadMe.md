@@ -25,17 +25,14 @@ c# code:
         using Aes128Decrypt;
         namespace Decrypt
         {
-            public class postdata
-            {
-            public string data { get; set; }
-            }
+            
 
-             public postdata Post(postdata collection)
+             public postdata Post(PayloadData collection)
              {
             
                String app_secret_key = "udhfjgmbdhgteidjfhvhwqas97fj3nfgu3";
         
-               var json = Decryption.OpenSSLDecrypt(collection.data, app_secret_key); 
+                var json = collection.PayloadDecrypt(app_secret_key); 
 
                return json;
             }
