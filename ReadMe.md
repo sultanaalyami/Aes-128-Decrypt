@@ -23,13 +23,14 @@ using Aes128Decrypt;
             public string data { get; set; }
         }
 
-   public postdata Post(postdata collection)
+    public postdata Post(postdata collection)
         {
-        String app_secret_key = "udhfjgmbdhgteidjfhvhwqas97fj3nfgu3";
+            
+         String app_secret_key = "udhfjgmbdhgteidjfhvhwqas97fj3nfgu3";
         
- var json = PayloadDecryption.OpenSSLDecrypt(collection.data, app_secret_key); 
+          var json = PayloadDecryption.OpenSSLDecrypt(collection.data, app_secret_key); 
 
- return json;
+       return json;
         }
         
         
@@ -39,8 +40,8 @@ json file is payload data after decoding.
 
 
 
-Decoded request example:
-{  
+   Decoded request example:
+    {  
    "Id":1003,
    "lang": "en",
    "returnUrl":"https://app.sbay.sa",
