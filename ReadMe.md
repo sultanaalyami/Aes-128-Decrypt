@@ -2,9 +2,9 @@
 It works in the following way:
 
 
-<form action="https://mycoolapp.com/Post" method="POST" accept-charset='utf-8'>
-<input type='hidden' name='data' value="PZZDt4FMG5ROVen3bSKJ7zQvF_V5cNRCmn0pfhGzKCIS0OcNcq6WlSXmUPluqY"/>
-</form>
+      <form action="https://mycoolapp.com/Post" method="POST" accept-charset='utf-8'>
+      <input type='hidden' name='data' value="PZZDt4FMG5ROVen3bSKJ7zQvF_V5cNRCmn0pfhGzKCIS0OcNcq6WlSXmUPluqY"/>
+      </form>
 
 ----------------------------------------------->
 
