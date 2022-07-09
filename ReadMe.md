@@ -35,7 +35,7 @@ c# code:
             
                String app_secret_key = "udhfjgmbdhgteidjfhvhwqas97fj3nfgu3";
         
-               var json = PayloadDecryption.OpenSSLDecrypt(collection.data, app_secret_key); 
+               var json = Decryption.OpenSSLDecrypt(collection.data, app_secret_key); 
 
                return json;
             }
