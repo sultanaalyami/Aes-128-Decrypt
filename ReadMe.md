@@ -38,19 +38,20 @@ using Aes128Decrypt;
 
 json file is payload data after decoding.
 
+Decoded request example:
 
 
-   Decoded request example:
+
     {  
-   "Id":1003,
-   "lang": "en",
-   "returnUrl":"https://app.sbay.sa",
-   "AppSettings":{  
+    "Id":1003,
+    "lang": "en",
+    "returnUrl":"https://app.sbay.sa",
+    "AppSettings":{  
       "apiKey":"\"XXX\""
    
-   },
-   "token":"abcdefghijklmnopqrstuv1234567890"
-}
+    },
+    "token":"abcdefghijklmnopqrstuv1234567890"
+    }
 
 
 The application of this type of encryption is usually for highly sensitive transactions such as payments applications and the like.
