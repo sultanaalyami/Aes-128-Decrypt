@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>Aes128Decrypt</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>$(Aes128Decrypt)</AssemblyName>
+    <ApplicationIcon>128.ico</ApplicationIcon>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>Aes128Decrypt</PackageId>
+    <Authors>SultanAlyami</Authors>
+    <Company>Sbay</Company>
+    <Product>Decrypt Payload </Product>
+    <Description>Can decode the payload encoded using the AES-128 mechanism via a secret key</Description>
+    <Copyright>All rights reserved to Sultan Al Yami &amp; Sbay</Copyright>
+    <PackageProjectUrl>https://github.com/sultanaalyami/Aes-128-Decrypt</PackageProjectUrl>
+    <PackageIcon>400x152.png</PackageIcon>
+    <PackageReadmeFile>ReadMe.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/sultanaalyami/Aes-128-Decrypt</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>c#-decript_AES_128-Decoding</PackageTags>
+    <PackageReleaseNotes>Using c#8 and .net6 the library was built</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="128.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\..\.nuget\ReadMe.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\..\..\..\OneDrive\تجارة الكترونية\Logo\sbay\For CP\400x152.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
+  </ItemGroup>
+
+</Project>
