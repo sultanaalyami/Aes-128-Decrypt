@@ -15,10 +15,10 @@ namespace Aes128Decrypt
             string padding = payload.data.Replace("-", "+").Replace("_", "/");
             //For correct payload decryption, create additional padding to make the payload a multiple of 4:
             padding = padding.PadRight(padding.Length + (4 - (padding.Length % 4)), '=');
-            var decoded = padding.DecodeBase64;
+             
 
             // Initialization vector is the first 16 bytes of the received data
-            var ivScout = decoded.ToString().Substring(0, 16);
+            var ivScout = padding.Substring(0, 16);
 
             // Initialization key 
             ClientSecret = ClientSecret.Substring(0, 16);
